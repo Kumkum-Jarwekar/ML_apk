@@ -2,12 +2,18 @@ import streamlit as st
 import numpy as np
 import pickle
 
+# Personal information
+with st.sidebar : 
+    st.write("My Gihub : https://github.com/Kumkum-Jarwekar/ ")
+    st.write("My Linkedin : www.linkedin.com/in/kumkum-jarwekar-6725042b3 ")
+    st.write("My youtube : https://www.youtube.com/@kumkumjarwekar7265 ")
+
 # Load the model
 with open('random_forest_classifier.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # Streamlit UI
-st.title("Cancer Prediction Web App By Ankita")
+st.title("Cancer Prediction Web App By Kumkum")
 st.write("🔍 This app uses a Random Forest Classifier to predict type of cancer.")
 
 # Collect user input
